@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Awnalmaali — Real Estate Development & Investment Jeddah</title>
+  <meta name="description" content="Explore Awnalmaali's comprehensive real estate services in Jeddah: development, investment, management, marketing, and consulting.">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .offers-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s6); }
+    @media (max-width: 768px) { .offers-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-actions">
+          <button class="lang-btn active-lang" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عربي</button>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <button class="nav-close" id="navClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" class="nav-link active" data-i18n="nav_offers">Offers</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">
+            <img src="assets/logo.png" alt="Awnalmaali">
+          </div>
+          <div class="nav-logo-text">
+            <span class="logo-en">Awn</span>
+            <span class="logo-ar">عون العقارية</span>
+            <span class="logo-sub" data-i18n="logo_sub">For Real Estate Development &amp; Investment</span>
+          </div>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ OFFERS HERO + COUNTDOWN ═══════════════════════════════════════ -->
+    <section class="offers-hero">
+      <div class="offers-hero-bg"></div>
+      <div class="offers-hero-overlay"></div>
+
+      <div class="offers-hero-content">
+        <span class="offers-hero-eyebrow" data-i18n="services_eyebrow">Comprehensive Solutions</span>
+        <h1 class="offers-hero-title" data-i18n="offers_title">Our Services</h1>
+        <p class="offers-hero-days" data-i18n="services_hero_sub">Built on Trust &amp; Transparency</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-wrap" id="countdown">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-days">00</span>
+            <div class="countdown-label" data-i18n="countdown_day">Day</div>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <div class="countdown-label" data-i18n="countdown_hour">Hour</div>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-mins">00</span>
+            <div class="countdown-label" data-i18n="countdown_min">Min</div>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-secs">00</span>
+            <div class="countdown-label" data-i18n="countdown_sec">Sec</div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-gold" data-i18n="btn_book_now">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ═══ OFFERS LIST ════════════════════════════════════════════════════ -->
+    <section class="section-py" style="background:var(--br-50);">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <p class="eyebrow" data-i18n="services_eyebrow">Comprehensive Solutions</p>
+          <h2 class="section-title" data-i18n="offers_title">Our Services</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead" style="margin-top:1rem;" data-i18n="offers_lead">Integrated real estate solutions built on trust, transparency, and professionalism</p>
+        </div>
+
+        <div class="offers-list">
+
+          <!-- Service 1: Development -->
+          <div class="offer-row-card fade-up">
+            <span class="offer-row-badge" data-i18n="srv_badge_dev">Development</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_dev">Real Estate Development</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_dev">End-to-End Project Development</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_dev">From feasibility studies and design through construction and delivery, we manage the entire development lifecycle. Every project is aligned with market needs and Vision 2030, ensuring quality, innovation, and sustainable value.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+          <!-- Service 2: Investment -->
+          <div class="offer-row-card fade-up delay-100">
+            <span class="offer-row-badge" data-i18n="srv_badge_inv">Investment</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_inv">Real Estate Investment</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_inv">Exclusive Investment Opportunities</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_inv">We identify, evaluate, and present exclusive investment opportunities in prime locations. Our portfolio management and strategic advisory services help individuals and institutions achieve sustainable returns with confidence.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+          <!-- Service 3: Property Management -->
+          <div class="offer-row-card fade-up delay-200">
+            <span class="offer-row-badge" data-i18n="srv_badge_mgmt">Management</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_mgmt">Property Management</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_mgmt">Full-Spectrum Property Operations</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_mgmt">Comprehensive management services covering tenant relations, maintenance, operations, and after-sales support. We ensure your property maintains its value and delivers optimal returns with complete peace of mind.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+          <!-- Service 4: Marketing & Brokerage -->
+          <div class="offer-row-card fade-up delay-300">
+            <span class="offer-row-badge" data-i18n="srv_badge_mktg">Marketing</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_mktg">Marketing &amp; Brokerage</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_mktg">Professional Real Estate Brokerage</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_mktg">Professional marketing and brokerage services for buying, selling, and leasing properties. We support real estate brokers with marketing tools, specialised databases, and market intelligence to maximise reach and results.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+          <!-- Service 5: Consulting -->
+          <div class="offer-row-card fade-up delay-100">
+            <span class="offer-row-badge" data-i18n="srv_badge_cons">Consulting</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_cons">Real Estate Consulting</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_cons">Expert Advisory &amp; Legal Support</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_cons">Strategic consulting services including market analysis, feasibility studies, and investment advisory. We provide complete legal and procedural support to facilitate ownership and investment for citizens, residents, and foreign investors.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+          <!-- Service 6: Financing -->
+          <div class="offer-row-card fade-up delay-200">
+            <span class="offer-row-badge" data-i18n="srv_badge_fin">Financing</span>
+            <div>
+              <p style="font-size:.75rem;font-weight:700;color:var(--gold-dark);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem;" data-i18n="srv_tag_fin">Financing Solutions</p>
+              <h3 style="font-weight:700;color:var(--br-900);font-size:1.1rem;margin-bottom:.5rem;" data-i18n="srv_title_fin">Integrated Financing Solutions</h3>
+              <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:.75rem;" data-i18n="srv_desc_fin">We connect clients with suitable financing institutions and offer tailored financing solutions that align with their needs and investment goals. Our partnerships with leading Saudi banks ensure competitive rates and smooth processing.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="flex-shrink:0;" data-i18n="btn_inquire">Inquire</a>
+          </div>
+
+        </div>
+
+        <!-- Why Choose Us Banner -->
+        <div style="margin-top:var(--s16); display:grid; grid-template-columns:1fr 1fr; gap:var(--s6);" class="fade-up">
+          <div style="background:linear-gradient(135deg,var(--br-800),var(--br-900)); border-radius:var(--r-xl); padding:var(--s8); color:var(--white);">
+            <div style="font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;" data-i18n="banner_commit">Our Commitment</div>
+            <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:.75rem;" data-i18n="banner_commit_title">Trust &amp; Transparency First</h3>
+            <p style="opacity:.85;font-size:.875rem;line-height:1.7;margin-bottom:1.25rem;" data-i18n="banner_commit_desc">We are committed to complete transparency, professionalism, and quality in every service we deliver. Every relationship is built on trust, and every promise is honoured.</p>
+            <a href="about.html" class="btn btn-gold btn-sm" style="font-size:.8rem;padding:.6rem 1.4rem;" data-i18n="btn_learn_more">Learn More</a>
+          </div>
+          <div style="background:var(--white); border:1px solid var(--br-100); border-radius:var(--r-xl); padding:var(--s8);">
+            <div style="font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.5rem;" data-i18n="banner_vision">Vision 2030</div>
+            <h3 style="font-size:1.25rem;font-weight:700;color:var(--br-900);margin-bottom:.75rem;" data-i18n="banner_vision_title">Aligned with National Goals</h3>
+            <p style="color:var(--gray-700);font-size:.875rem;line-height:1.7;margin-bottom:1.25rem;" data-i18n="banner_vision_desc">Our work contributes to Saudi Arabia's urban development and economic growth, supporting the ambitious goals of Vision 2030 through sustainable real estate development and investment.</p>
+            <a href="about.html" class="btn btn-outline-brown btn-sm" style="font-size:.8rem;padding:.6rem 1.4rem;" data-i18n="btn_learn_more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:var(--s4);">
+            <div class="nav-logo-icon" style="width:44px;height:44px;"><img src="assets/logo.png" alt="Awnalmaali"></div>
+            <div class="nav-logo-text"><span class="logo-en">Awn</span><span class="logo-ar">عون العقارية</span></div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Your trusted partner for real estate development and investment in Jeddah.</p>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_quick">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" data-i18n="nav_offers">Services</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_serv">Our Services</div>
+          <ul class="footer-links">
+            <li><a href="offers.html" data-i18n="footer_serv_dev">Real Estate Development</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_inv">Real Estate Investment</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_mgmt">Property Management</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_brok">Marketing &amp; Brokerage</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_cons">Real Estate Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_ksa">Kingdom of Saudi Arabia — Jeddah</div>
+          <div class="footer-address"><strong data-i18n="footer_addr_1">9476 Madinah Road, Al-Andalus</strong><span data-i18n="footer_addr_2">P.O. Box 4127, Jeddah 23326</span><br><span data-i18n="contact_email_val">Info@awnalmaali.com</span><br><span data-i18n="contact_phone_val">+966 55 810 0341</span></div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Awnalmaali for Real Estate Development &amp; Investment. All rights reserved.</p>
+        <div class="footer-legal"><a href="#" data-i18n="footer_privacy">Privacy Policy</a><a href="#" data-i18n="footer_terms">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

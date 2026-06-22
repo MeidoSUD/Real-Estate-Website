@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Awnalmaali — Real Estate Development & Investment Jeddah</title>
+  <meta name="description" content="Explore Awnalmaali's portfolio of real estate development and investment projects in Jeddah, Saudi Arabia.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-actions">
+          <button class="lang-btn active-lang" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عربي</button>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <button class="nav-close" id="navClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" class="nav-link active" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" class="nav-link" data-i18n="nav_offers">Offers</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">
+            <img src="assets/logo.png" alt="Awnalmaali">
+          </div>
+          <div class="nav-logo-text">
+            <span class="logo-en">Awn</span>
+            <span class="logo-ar">عون العقارية</span>
+            <span class="logo-sub" data-i18n="logo_sub">For Real Estate Development &amp; Investment</span>
+          </div>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ PAGE HERO ════════════════════════════════════════════════════ -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/sea.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="page-hero-eyebrow" data-i18n="featured_eyebrow">Our Portfolio</p>
+        <h1 class="page-hero-title" data-i18n="featured_title">Projects &amp; Opportunities</h1>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS GRID ════════════════════════════════════════════════ -->
+    <section class="section-py" style="background: var(--br-50);">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <p class="eyebrow" data-i18n="featured_eyebrow">Our Portfolio</p>
+          <h2 class="section-title" data-i18n="featured_title">Projects &amp; Opportunities</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead" style="margin-top:1rem;" data-i18n="featured_lead">Discover our portfolio of real estate development, investment, and management projects</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-bar fade-up delay-100">
+          <button class="filter-tab active" data-cat="all" data-i18n="filter_all">All</button>
+          <button class="filter-tab" data-cat="development" data-i18n="filter_dev">Development</button>
+          <button class="filter-tab" data-cat="investment" data-i18n="filter_inv">Investment</button>
+          <button class="filter-tab" data-cat="management" data-i18n="filter_mgmt">Management</button>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- 1 -->
+          <article class="prop-card fade-up" data-cat="development">
+            <div class="prop-card-img">
+              <span class="prop-badge badge-featured" data-i18n="badge_featured">Featured</span>
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/project1.png" alt="Real estate development project" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc_andalus">Al-Andalus, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_1">Residential Development — A</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_coming_soon">Coming Soon</div><div class="prop-price-label" data-i18n="price_under_dev">Under Development</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg><span data-i18n="feat_premium_res"><strong>Premium</strong> Residences</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="feat_prime_loc"><strong>Prime</strong> Location</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg><span data-i18n="feat_modern_design"><strong>Modern</strong> Design</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="prop-card fade-up delay-100" data-cat="investment">
+            <div class="prop-card-img">
+              <span class="prop-badge badge-new" data-i18n="badge_new">New</span>
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/project2.jpg" alt="Real estate investment opportunity" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc_madinah">Madinah Road, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_2">Investment Tower — B</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_exclusive">Exclusive</div><div class="prop-price-label" data-i18n="price_inv_opp">Investment Opportunity</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-i18n="feat_secure_inv"><strong>Secure</strong> Investment</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-i18n="feat_verified_asset"><strong>Verified</strong> Asset</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="feat_expert_adv"><strong>Expert</strong> Advisory</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="prop-card fade-up delay-200" data-cat="management">
+            <div class="prop-card-img">
+              <span class="prop-badge badge-hot" data-i18n="badge_exclusive">Exclusive</span>
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/project3.jpg" alt="Property management services" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"></svg><span data-i18n="loc_shati_short">Al-Shati, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_3">Property Management — C</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_full_service">Full Service</div><div class="prop-price-label" data-i18n="price_mgmt_ops">Management &amp; Operations</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M2 10h20"/><path d="M7 10V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/></svg><span data-i18n="feat_full_mgmt"><strong>Full</strong> Management</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16"/><path d="M4 6c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v6H4V6z"/><path d="M4 12v8"/><path d="M20 12v8"/></svg><span data-i18n="feat_tenant_rel"><strong>Tenant</strong> Relations</span></li>
+                <li class="prop-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg><span data-i18n="feat_247_support"><strong>24/7</strong> Support</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="prop-card fade-up" data-cat="development">
+            <div class="prop-card-img">
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/tower.jpg" alt="Real estate development project" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc_hamra">Al-Hamra, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_4">Commercial Project — D</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_under_study">Under Study</div><div class="prop-price-label" data-i18n="price_feasibility">Feasibility Phase</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature" data-i18n="feat_mixed_use"><strong>Mixed</strong> Use</li>
+                <li class="prop-feature" data-i18n="feat_strategic_loc"><strong>Strategic</strong> Location</li>
+                <li class="prop-feature" data-i18n="feat_high_roi"><strong>High</strong> ROI</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="prop-card fade-up delay-100" data-cat="investment">
+            <div class="prop-card-img">
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/sea.jpg" alt="Real estate investment" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc_corniche">Corniche, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_5">Waterfront Investment — E</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_exclusive">Exclusive</div><div class="prop-price-label" data-i18n="price_premium_opp">Premium Opportunity</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature" data-i18n="feat_sea_view"><strong>Sea</strong> View</li>
+                <li class="prop-feature" data-i18n="feat_premium_res"><strong>Premium</strong> Location</li>
+                <li class="prop-feature" data-i18n="feat_ready_now"><strong>Ready</strong> Now</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="prop-card fade-up delay-200" data-cat="management">
+            <div class="prop-card-img">
+              <button class="prop-fav" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              <img src="assets/jeddah.jpg" alt="Property management" loading="lazy">
+              <div class="prop-card-img-overlay"></div>
+              <div class="prop-card-actions">
+                <a href="contact.html" class="card-action-btn primary" data-i18n="btn_view_details">View Details</a>
+                <button class="card-action-btn secondary" data-i18n="btn_save">Save</button>
+              </div>
+            </div>
+            <div class="prop-card-body">
+              <div class="prop-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="loc_rawdah">Al-Rawdah, Jeddah</span></div>
+              <h3 class="prop-name" data-i18n="proj_name_6">Facility Management — F</h3>
+              <div class="prop-price-row"><div><div class="prop-price" data-i18n="price_active">Active</div><div class="prop-price-label" data-i18n="price_under_mgmt">Under Management</div></div></div>
+              <ul class="prop-features">
+                <li class="prop-feature" data-i18n="feat_full_ops"><strong>Full</strong> Operations</li>
+                <li class="prop-feature" data-i18n="feat_tenant_mgmt"><strong>Tenant</strong> Management</li>
+                <li class="prop-feature" data-i18n="feat_maint_incl"><strong>Maintenance</strong> Included</li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- /cards-grid -->
+
+        <!-- CTA Banner -->
+        <div style="margin-top:var(--s16); padding:var(--s10) var(--s8); background:linear-gradient(135deg,var(--br-900),var(--br-800)); border-radius:var(--r-xl); text-align:center;" class="fade-up">
+          <p class="eyebrow" style="color:var(--gold);" data-i18n="proj_cta_eyebrow">Looking for a specific opportunity?</p>
+          <h3 style="font-family:var(--font-display-en); font-size:1.5rem; color:var(--white); margin:var(--s3) 0 var(--s6);" data-i18n="proj_cta_title">We Have Exclusive Investment Opportunities Available</h3>
+          <a href="contact.html" class="btn btn-gold" data-i18n="btn_request">Request Consultation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:var(--s4);">
+            <div class="nav-logo-icon" style="width:44px;height:44px;"><img src="assets/logo.png" alt="Awnalmaali"></div>
+            <div class="nav-logo-text"><span class="logo-en">Awn</span><span class="logo-ar">عون العقارية</span></div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Your trusted partner for real estate development and investment in Jeddah.</p>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_quick">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" data-i18n="nav_offers">Services</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_serv">Our Services</div>
+          <ul class="footer-links">
+            <li><a href="offers.html" data-i18n="footer_serv_dev">Real Estate Development</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_inv">Real Estate Investment</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_mgmt">Property Management</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_brok">Marketing &amp; Brokerage</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_cons">Real Estate Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_ksa">Kingdom of Saudi Arabia — Jeddah</div>
+          <div class="footer-address"><strong data-i18n="footer_addr_1">9476 Madinah Road, Al-Andalus</strong><span data-i18n="footer_addr_2">P.O. Box 4127, Jeddah 23326</span><br><span data-i18n="contact_email_val">Info@awnalmaali.com</span><br><span data-i18n="contact_phone_val">+966 55 810 0341</span></div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Awnalmaali for Real Estate Development &amp; Investment. All rights reserved.</p>
+        <div class="footer-legal"><a href="#" data-i18n="footer_privacy">Privacy Policy</a><a href="#" data-i18n="footer_terms">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

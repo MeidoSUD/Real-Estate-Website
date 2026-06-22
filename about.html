@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Awnalmaali — Real Estate Development & Investment Jeddah</title>
+  <meta name="description" content="Learn about Awnalmaali for Real Estate Development & Investment in Jeddah — our vision, mission, values, and team of dedicated professionals.">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* About-page specific styles */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--s6);
+    }
+    .team-card {
+      text-align: center;
+      background: var(--white);
+      border-radius: var(--r-xl);
+      padding: var(--s8) var(--s6);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--br-100);
+      transition: all var(--ease-spring);
+    }
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--br-300);
+    }
+    .team-avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: var(--r-full);
+      overflow: hidden;
+      margin-inline: auto;
+      margin-block-end: var(--s4);
+      border: 3px solid var(--gold);
+      transition: border-color var(--ease-base);
+    }
+    .team-card:hover .team-avatar { border-color: var(--br-700); }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .team-name { font-weight: 700; color: var(--br-900); font-size: 1rem; margin-block-end: var(--s1); }
+    .team-role { font-size: 0.8rem; color: var(--gold-dark); font-weight: 600; margin-block-end: var(--s3); }
+    .team-bio  { font-size: 0.8rem; color: var(--gray-700); line-height: 1.6; }
+
+    .vision-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s6);
+      margin-block-start: var(--s10);
+    }
+
+    .vision-card {
+      background: var(--white);
+      border-radius: var(--r-xl);
+      padding: var(--s8);
+      border: 1px solid var(--br-100);
+      transition: all var(--ease-spring);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vision-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 60%, rgba(201,165,90,.06) 100%);
+      opacity: 0;
+      transition: opacity var(--ease-base);
+    }
+
+    .vision-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .vision-card:hover::before { opacity: 1; }
+
+    .vision-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--br-800), var(--br-700));
+      color: var(--gold);
+      border-radius: var(--r-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block-end: var(--s5);
+      transition: all var(--ease-spring);
+    }
+
+    .vision-card:hover .vision-icon {
+      transform: scale(1.12) rotate(-3deg);
+    }
+
+    .vision-icon svg { width: 26px; height: 26px; }
+    .vision-title { font-weight: 700; color: var(--br-900); font-size: 1.05rem; margin-block-end: var(--s2); }
+    .vision-desc  { font-size: 0.875rem; color: var(--gray-700); line-height: 1.75; }
+
+    @media (max-width: 900px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .vision-cards { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .vision-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-actions">
+          <button class="lang-btn active-lang" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عربي</button>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <button class="nav-close" id="navClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="nav-link active" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" class="nav-link" data-i18n="nav_offers">Offers</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">
+            <img src="assets/logo.png" alt="Awnalmaali">
+          </div>
+          <div class="nav-logo-text">
+            <span class="logo-en">Awn</span>
+            <span class="logo-ar">عون العقارية</span>
+            <span class="logo-sub" data-i18n="logo_sub">For Real Estate Development &amp; Investment</span>
+          </div>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ PAGE HERO ════════════════════════════════════════════════════ -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/jeddah.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="page-hero-eyebrow" data-i18n="about_eyebrow">About Awn</p>
+        <h1 class="page-hero-title" data-i18n="about_title">Real Estate Development &amp; Investment</h1>
+      </div>
+    </section>
+
+    <!-- ═══ OUR STORY ════════════════════════════════════════════════════ -->
+    <section class="section-py">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-img-stack fade-left">
+            <div class="about-img-main-wrap">
+              <img src="assets/tower.jpg" alt="Awnalmaali real estate development" loading="lazy">
+            </div>
+            <div class="about-badge">
+              <span class="about-badge-num">2026</span>
+              <span class="about-badge-label">A new<br>Beginning</span>
+            </div>
+          </div>
+
+          <div class="fade-right">
+            <div class="section-head">
+              <p class="eyebrow" data-i18n="about_story">Our Story</p>
+              <h2 class="section-title" data-i18n="about_story_title">Built on Vision, Driven by Excellence</h2>
+              <div class="title-bar"></div>
+            </div>
+            <p style="color:var(--gray-700); margin-bottom:1rem; line-height:1.8;" data-i18n="about_p1">
+              Awnalmaali for Real Estate Development &amp; Investment was founded from a deep belief that the real estate sector is not managed by numbers alone, but by trust and a genuine understanding of people's needs before market needs.
+            </p>
+            <p style="color:var(--gray-700); margin-bottom:1rem; line-height:1.8;" data-i18n="about_p2">
+              Aligned with Saudi Vision 2030, we provide integrated real estate solutions including development, marketing, management, and investment — focusing on building sustainable value and lasting relationships.
+            </p>
+<p style="color:var(--gray-700); margin-bottom:2rem; line-height:1.8;" data-i18n="about_story_p">
+  We believe success is not measured by the number of deals, but by the quality of relationships we build and the impact we leave on our clients and partners. Our name "Awn" reflects our true essence — to be a support, a partner, and a trusted ally in every step.
+</p>
+
+            <div class="about-features">
+              <div class="about-feature-row">
+                <div class="about-feat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+                </div>
+                <div class="about-feat-text">
+                  <h4 data-i18n="about_feat_trust">Trust &amp; Transparency</h4>
+                  <p data-i18n="about_feat_trust_desc">Complete clarity in every step — no hidden fees, no surprises</p>
+                </div>
+              </div>
+              <div class="about-feature-row">
+                <div class="about-feat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="about-feat-text">
+                  <h4 data-i18n="about_feat_vision">Vision 2030 Aligned</h4>
+                  <p data-i18n="about_feat_vision_desc">Contributing to Saudi Arabia's urban development and economic growth</p>
+                </div>
+              </div>
+              <div class="about-feature-row">
+                <div class="about-feat-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="about-feat-text">
+                  <h4 data-i18n="about_feat_partner">Strategic Partnerships</h4>
+                  <p data-i18n="about_feat_partner_desc">Building an extensive network with investors, developers, and brokers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ STATS ════════════════════════════════════════════════════════ -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card fade-up">
+            <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+            <div class="stat-num" data-count="72">0+</div>
+            <div class="stat-label" data-i18n="stat_projects">Completed Projects</div>
+          </div>
+          <div class="stat-card fade-up delay-100">
+            <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/></svg></div>
+            <div class="stat-num" data-count="840">0+</div>
+            <div class="stat-label" data-i18n="stat_units">Units Sold</div>
+          </div>
+          <div class="stat-card fade-up delay-200">
+            <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/></svg></div>
+            <div class="stat-num" data-count="15">0+</div>
+            <div class="stat-label" data-i18n="stat_years">Years of Excellence</div>
+          </div>
+          <div class="stat-card fade-up delay-300">
+            <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="stat-num" data-count="620">0+</div>
+            <div class="stat-label" data-i18n="stat_clients">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ OUR VALUES ════════════════════════════════════════════════════ -->
+    <section class="section-py" style="background: var(--br-50);">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <p class="eyebrow" data-i18n="values_title">Our Values</p>
+          <h2 class="section-title" data-i18n="values_sub">What Drives Us Every Day</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="vision-cards">
+          <div class="vision-card fade-up">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg></div>
+            <div class="vision-title" data-i18n="value_trust">Trust</div>
+            <div class="vision-desc" data-i18n="value_trust_desc">Trust is the foundation of every relationship we build. We earn it through consistent, honest actions.</div>
+          </div>
+          <div class="vision-card fade-up delay-100">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div class="vision-title" data-i18n="value_transparency">Transparency</div>
+            <div class="vision-desc" data-i18n="value_transparency_desc">Complete clarity in every step. No hidden fees, no surprises — just honest, open communication.</div>
+          </div>
+          <div class="vision-card fade-up delay-200">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="vision-title" data-i18n="value_prof">Professionalism</div>
+            <div class="vision-desc" data-i18n="value_prof_desc">High-performance standards, precision, and excellence in every service we deliver.</div>
+          </div>
+          <div class="vision-card fade-up delay-300">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="vision-title" data-i18n="value_partner">Partnership</div>
+            <div class="vision-desc" data-i18n="value_partner_desc">We believe success is built through collaboration, shared goals, and mutual benefit.</div>
+          </div>
+          <div class="vision-card fade-up delay-100">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div class="vision-title" data-i18n="value_sustain">Sustainability</div>
+            <div class="vision-desc" data-i18n="value_sustain_desc">Building lasting value that supports growth, stability, and a positive impact for generations.</div>
+          </div>
+          <div class="vision-card fade-up delay-200">
+            <div class="vision-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg></div>
+            <div class="vision-title" data-i18n="value_innov">Innovation</div>
+            <div class="vision-desc" data-i18n="value_innov_desc">Turning ideas into real investment opportunities with modern approaches and smart solutions.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TEAM ══════════════════════════════════════════════════════════ -->
+    <section class="section-py" style="background:var(--white);">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <p class="eyebrow" data-i18n="team_eyebrow">Leadership</p>
+          <h2 class="section-title" data-i18n="team_title">Our Founder &amp; CEO</h2>
+          <div class="title-bar"></div>
+          <p class="section-lead" style="margin-top:1rem;" data-i18n="team_lead">Visionary leadership driving excellence in real estate development and investment</p>
+        </div>
+
+        <div class="team-grid" style="grid-template-columns:1fr; max-width:500px; margin-inline:auto;">
+          <div class="team-card fade-up" style="max-width:400px; margin-inline:auto;">
+            <div class="team-avatar">
+              <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=200" alt="CEO portrait" loading="lazy">
+            </div>
+            <div class="team-name" data-i18n="team_name">Abdullah Ahmed Abdullah Al Awn Al Qahtani</div>
+            <div class="team-role" data-i18n="team_role">Founder &amp; CEO</div>
+            <div class="team-bio" data-i18n="team_bio">Leading Awnalmaali with a vision rooted in trust, innovation, and sustainable growth. Committed to building a pioneering real estate and investment entity in the Kingdom of Saudi Arabia.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ACCREDITATIONS ════════════════════════════════════════════════ -->
+    <section class="accreditations">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <p class="eyebrow" data-i18n="accred_title">Accreditations</p>
+          <h2 class="section-title" data-i18n="accred_title">Certifications &amp; Accreditations</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="accred-track fade-up delay-100">
+          <div class="accred-item">
+            <div class="accred-name" data-i18n="accred_jeddah">Jeddah Chamber</div>
+            <div class="accred-desc" data-i18n="accred_jeddah_desc">Membership No. 669093 · CR 4127</div>
+          </div>
+          <div class="accred-item">
+            <div class="accred-name" data-i18n="accred_vat">VAT Registered</div>
+            <div class="accred-desc" data-i18n="accred_vat_desc">ZATCA · Since 31/07/2024</div>
+          </div>
+          <div class="accred-item">
+            <div class="accred-name" data-i18n="accred_unified">Unified No.</div>
+            <div class="accred-desc" data-i18n="accred_unified_desc">7054135533</div>
+          </div>
+          <div class="accred-item">
+            <div class="accred-name" data-i18n="accred_nat_addr">National Address</div>
+            <div class="accred-desc" data-i18n="accred_nat_addr_desc">JCAA9476 · Madinah Road</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:var(--s4);">
+            <div class="nav-logo-icon" style="width:44px;height:44px;">
+              <img src="assets/logo.png" alt="Awnalmaali">
+            </div>
+            <div class="nav-logo-text"><span class="logo-en">Awn</span><span class="logo-ar">عون العقارية</span></div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Your trusted partner for real estate development and investment in Jeddah.</p>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_quick">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="offers.html" data-i18n="nav_offers">Services</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_serv">Our Services</div>
+          <ul class="footer-links">
+            <li><a href="offers.html" data-i18n="footer_serv_dev">Real Estate Development</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_inv">Real Estate Investment</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_mgmt">Property Management</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_brok">Marketing &amp; Brokerage</a></li>
+            <li><a href="offers.html" data-i18n="footer_serv_cons">Real Estate Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer_ksa">Kingdom of Saudi Arabia — Jeddah</div>
+          <div class="footer-address">
+            <strong data-i18n="footer_addr_1">9476 Madinah Road, Al-Andalus</strong>
+            <span data-i18n="footer_addr_2">P.O. Box 4127, Jeddah 23326</span><br>
+            <span data-i18n="contact_email_val">Info@awnalmaali.com</span><br><span data-i18n="contact_phone_val">+966 55 810 0341</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Awnalmaali for Real Estate Development &amp; Investment. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer_terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
