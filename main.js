@@ -779,7 +779,7 @@
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
       const orig = btn.textContent;
@@ -787,17 +787,34 @@
       btn.textContent = currentLang === 'ar' ? 'جارٍ الإرسال...' : 'Sending...';
       btn.disabled = true;
 
-      setTimeout(() => {
-        btn.textContent = currentLang === 'ar' ? 'تم الإرسال!' : 'Sent!';
-        btn.style.background = 'var(--success)';
-        form.reset();
+      try {
+        const data = new FormData(form);
+        data.append('_subject', currentLang === 'ar' ? 'استفسار جديد من موقع عون المعالي' : 'New inquiry from Awnalmaali website');
 
-        setTimeout(() => {
-          btn.textContent = orig;
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3000);
-      }, 1600);
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          btn.textContent = currentLang === 'ar' ? 'تم الإرسال!' : 'Sent!';
+          btn.style.background = 'var(--success)';
+          form.reset();
+        } else {
+          btn.textContent = currentLang === 'ar' ? 'فشل الإرسال' : 'Failed';
+          btn.style.background = 'var(--error)';
+        }
+      } catch {
+        btn.textContent = currentLang === 'ar' ? 'خطأ في الاتصال' : 'Network error';
+        btn.style.background = 'var(--error)';
+      }
+
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
     });
   }
 
