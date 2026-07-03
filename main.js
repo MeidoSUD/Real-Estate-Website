@@ -14,23 +14,24 @@
       nav_home: 'Home',
       nav_about: 'About Us',
       nav_projects: 'Projects',
-      nav_offers: 'Offers',
+      nav_offers: 'Services',
+      nav_investors: 'Investors',
+      nav_suppliers: 'Suppliers',
       nav_contact: 'Contact Us',
-      logo_sub: 'For Real Estate Development &amp; Investment',
+      logo_sub: 'Awn Real Estate Development and Investment',
 
       // Home Hero
       hero_eyebrow: 'Awnalmaali · Jeddah, Saudi Arabia',
-      hero_title_1: 'Real Estate Development',
-      hero_title_accent: '&amp; Investment',
+      hero_title_1: 'Awn Real Estate Development',
+      hero_title_accent: 'and Investment',
       hero_desc: 'Your trusted partner in real estate development, investment, marketing, and property management. Building value that lasts for generations.',
       hero_cta_1: 'Explore Projects',
       hero_cta_2: 'Contact Us',
       scroll_label: 'Scroll to discover',
 
       // Stats
-      stat_projects: 'Projects Developed',
+      stat_projects: 'Coming Projects',
       stat_units: 'Opportunities',
-      stat_years: 'Founded 2026',
       stat_clients: 'Partners &amp; Clients',
 
       // Sections
@@ -40,10 +41,10 @@
       offers_eyebrow: 'Our Services',
       offers_title: 'What We Offer',
       offers_lead: 'Integrated real estate solutions built on trust, transparency, and professionalism',
-      about_eyebrow: 'About Awn',
-      about_title: 'Real Estate Development &amp; Investment',
-      about_p1: 'Awnalmaali for Real Estate Development &amp; Investment was founded on a deep belief that real estate is more than just assets and projects — it is an industry of value, a driver of development, and one of the most prominent pillars of economic growth.',
-      about_p2: 'We provide integrated real estate solutions including development, marketing, management, and investment — with a focus on building sustainable value, not just short-term deals.',
+      about_eyebrow: 'Our Identity',
+      about_title: 'Who We Are',
+      about_p1: 'Awn Endures &mdash; Growth Bears Fruit. The name "Awn" extends from our family identity, but carries a deeper meaning &mdash; to be a support, a pillar, and a trusted partner in building real estate and investment decisions. We build lasting relationships founded on trust and a genuine understanding of human needs before market demands.',
+      about_p2: 'We provide high-quality real estate solutions based on thorough study and deep market analysis, with an unwavering commitment to transparency and credibility.',
       contact_eyebrow: 'Get In Touch',
       contact_title: 'We Are Here to Help — Contact Us Today',
 
@@ -68,12 +69,10 @@
       loc_shati_short: 'Al-Shati, Jeddah',
 
       // Project names
-      proj_name_1: 'Residential Development — District A',
-      proj_name_2: 'Investment Opportunity — Tower B',
-      proj_name_3: 'Property Management — Portfolio C',
-      proj_name_4: 'Commercial Project — D',
-      proj_name_5: 'Waterfront Investment — E',
-      proj_name_6: 'Facility Management — F',
+      proj_name_1: 'Wallet Project',
+      proj_name_2: 'Tower Project',
+      proj_name_3: 'Trade Building',
+      proj_name_4: 'Resident Building',
 
       // Project prices
       price_coming_soon: 'Coming Soon',
@@ -108,19 +107,21 @@
       feat_maint_incl: 'Maintenance Included',
 
       // About page
-      about_story: 'Our Story',
-      about_story_title: 'Built on Vision, Driven by Excellence',
-      about_story_p: 'We believe success is not measured by the number of deals, but by the quality of relationships we build and the impact we leave on our clients and partners. Our name "Awn" reflects our true essence — to be a support, a partner, and a trusted ally in every step.',
+      about_story: 'Our Identity',
+      about_story_title: 'Who We Are',
+      about_name_meaning: 'The name "Awn" extends from our family identity, bearing a deeper meaning — to be a support, a pillar, and a trusted partner in building real estate and investment decisions. We build lasting relationships founded on trust and a genuine understanding of human needs before market demands.',
+      about_vision_title: 'Our Vision',
+      about_vision: 'To be the most prominent real estate and investment entity in the Kingdom, delivering exceptional projects that align with Vision 2030 and create sustainable value that inspires generations.',
+      about_mission_title: 'Our Mission',
+      about_mission: 'Providing high-quality real estate solutions based on thorough study and deep market analysis, with a commitment to transparency and credibility as a steadfast standard.',
       about_feat_trust: 'Trust &amp; Transparency',
       about_feat_trust_desc: 'Complete clarity in every step — no hidden fees, no surprises',
       about_feat_vision: 'Vision 2030 Aligned',
       about_feat_vision_desc: "Contributing to Saudi Arabia's urban development and economic growth",
       about_feat_partner: 'Strategic Partnerships',
       about_feat_partner_desc: 'Building an extensive network with investors, developers, and brokers',
-      about_feat_quality: 'Professionalism &amp; Quality',
-      about_feat_quality_desc: 'High-performance standards and precise execution in every service',
-      about_feat_partner2: 'Strategic Partnerships',
-      about_feat_partner2_desc: 'Building lasting relationships with investors, developers, and brokers',
+      about_team_philosophy: 'At Awn, we believe excellence is driven by quality competencies and human passion. Our team includes an elite group of experts, engineers, and financial analysts who share one vision: "Commitment to promises and fulfilling them above all else."',
+      about_team_lead: 'Under the supervision and direction of CEO Mr. Abdullah Ahmed Abdullah Al Awn Al Qahtani, all sectors of the company operate with a strict integrative system based on accuracy, transparency, and professionalism as non-negotiable standards. We lead a system that creates sustainable impact.',
 
       // Values
       values_title: 'Our Values',
@@ -139,9 +140,9 @@
       value_innov_desc: 'Turning ideas into real investment opportunities with modern approaches and smart solutions.',
 
       // Team
-      team_eyebrow: 'Leadership',
-      team_title: 'Our Founder &amp; CEO',
-      team_lead: 'Visionary leadership driving excellence in real estate development and investment',
+      team_eyebrow: 'Our Team',
+      team_title: 'Hands Building the Future',
+      team_lead: 'Excellence driven by quality competencies and human passion',
       team_name: 'Abdullah Ahmed Abdullah Al Awn Al Qahtani',
       team_role: 'Founder &amp; CEO',
       team_bio: 'Leading Awnalmaali with a vision rooted in trust, innovation, and sustainable growth. Committed to building a pioneering real estate and investment entity in the Kingdom of Saudi Arabia.',
@@ -162,8 +163,10 @@
       contact_label_phone: 'Phone',
       contact_label_email: 'Email',
       contact_label_website: 'Website',
+      contact_label_whatsapp: 'WhatsApp',
+      contact_whatsapp_text: 'Message Awn Al-Maali for Real Estate Development and Investment via WhatsApp',
       contact_addr_val: '9476 Madinah Road, Al-Andalus\nP.O. Box 4127, Jeddah 23326\nKingdom of Saudi Arabia',
-      contact_phone_val: '+966 55 810 0341\n+966 50 082 8856',
+      contact_phone_val: '0558100341\n0500828856',
       contact_email_val: 'Info@awnalmaali.com',
       contact_website_val: 'awnalmaali.com',
       contact_form_title: 'Request a Consultation',
@@ -176,7 +179,7 @@
       contact_form_msg: 'Message',
       contact_form_placeholder_first: 'First Name',
       contact_form_placeholder_last: 'Last Name',
-      contact_form_placeholder_phone: '+966 5X XXX XXXX',
+      contact_form_placeholder_phone: '+9665XXXXXXXX',
       contact_form_placeholder_email: 'your@email.com',
       contact_form_placeholder_msg: 'Tell us about your requirements, investment goals, or any questions...',
       contact_form_sel_default: 'Select service',
@@ -204,8 +207,10 @@
       footer_serv_cons: 'Real Estate Consulting',
 
       // Services / Offers page
+      services_main_title: 'Integrated Solutions — From Idea to Real Investment',
       services_hero_sub: 'Built on Trust &amp; Transparency',
       services_eyebrow: 'Comprehensive Solutions',
+      services_intro: 'We offer a comprehensive system of services designed to meet the aspirations of individuals, companies, and investors with high efficiency and reliability.',
       countdown_day: 'Day',
       countdown_hour: 'Hour',
       countdown_min: 'Min',
@@ -213,23 +218,23 @@
       srv_badge_dev: 'Development',
       srv_tag_dev: 'Real Estate Development',
       srv_title_dev: 'End-to-End Project Development',
-      srv_desc_dev: 'From feasibility studies and design through construction and delivery, we manage the entire development lifecycle. Every project is aligned with market needs and Vision 2030, ensuring quality, innovation, and sustainable value.',
+      srv_desc_dev: 'Turning ideas and opportunities into distinctive residential and commercial projects and complexes based on innovation and quality.',
       srv_badge_inv: 'Investment',
       srv_tag_inv: 'Real Estate Investment',
       srv_title_inv: 'Exclusive Investment Opportunities',
-      srv_desc_inv: 'We identify, evaluate, and present exclusive investment opportunities in prime locations. Our portfolio management and strategic advisory services help individuals and institutions achieve sustainable returns with confidence.',
+      srv_desc_inv: 'Accurate reading of exclusive opportunities, intelligent risk management to ensure sustainable returns and safe capital growth.',
       srv_badge_mgmt: 'Management',
       srv_tag_mgmt: 'Property Management',
       srv_title_mgmt: 'Full-Spectrum Property Operations',
-      srv_desc_mgmt: 'Comprehensive management services covering tenant relations, maintenance, operations, and after-sales support. We ensure your property maintains its value and delivers optimal returns with complete peace of mind.',
+      srv_desc_mgmt: 'Preserving and developing real estate assets to ensure the sustainability of their investment value over the long term.',
       srv_badge_mktg: 'Marketing',
       srv_tag_mktg: 'Marketing &amp; Brokerage',
       srv_title_mktg: 'Professional Real Estate Brokerage',
-      srv_desc_mktg: 'Professional marketing and brokerage services for buying, selling, and leasing properties. We support real estate brokers with marketing tools, specialised databases, and market intelligence to maximise reach and results.',
+      srv_desc_mktg: 'Supporting the sales, purchase, and leasing ecosystem with advanced marketing tools and specialised databases serving clients and brokers.',
       srv_badge_cons: 'Consulting',
-      srv_tag_cons: 'Real Estate Consulting',
+      srv_tag_cons: 'Consulting &amp; Procedural Follow-up',
       srv_title_cons: 'Expert Advisory &amp; Legal Support',
-      srv_desc_cons: 'Strategic consulting services including market analysis, feasibility studies, and investment advisory. We provide complete legal and procedural support to facilitate ownership and investment for citizens, residents, and foreign investors.',
+      srv_desc_cons: 'Providing advice based on experience, and facilitating ownership and investment processes for citizens, residents, and foreign investors legally and procedurally.',
       srv_badge_fin: 'Financing',
       srv_tag_fin: 'Financing Solutions',
       srv_title_fin: 'Integrated Financing Solutions',
@@ -244,6 +249,25 @@
       // Projects CTA
       proj_cta_eyebrow: 'Looking for a specific opportunity?',
       proj_cta_title: 'We Have Exclusive Investment Opportunities Available',
+
+      // Investors page
+      inv_eyebrow: 'Strategic Partnership',
+      inv_title: 'We Create Opportunities for Growth That Bears Fruit',
+      inv_vision: 'We see investment from the perspective of partnership and integrated interests — true success is built through collaboration. We conduct in-depth analysis of the real estate market and make informed investment decisions aimed at preserving and growing assets and intelligently mitigating risks.',
+      inv_offer_title: 'What We Offer Our Investment Partners',
+      inv_offer_1: 'Exclusive opportunities in prime locations across the Makkah Region',
+      inv_offer_2: 'Financing solutions linking investors with suitable financing entities aligned with investment goals',
+      inv_offer_3: 'Complete transparency with periodic reports and full clarity in every financial or procedural step',
+
+      // Suppliers page
+      sup_hero_eyebrow: 'Partners in Quality',
+      sup_hero_title: 'Supplier Portal',
+      sup_hero_sub: 'Building &amp; Sustainability — Join Our Network',
+      sup_eyebrow: 'Partners in Quality',
+      sup_title: 'Building &amp; Sustainability — Supplier Portal',
+      sup_intro: 'Because we are committed to delivering the highest levels of efficiency and reliability, we consider our network of suppliers and contractors an integral part of our identity and real estate credibility. We are always looking for entities that share our values of "Quality, Commitment, and Sustainability" to transform plans into living landmarks on the ground.',
+      sup_criteria: 'The Awnalmaali Supplier Portal welcomes qualification applications from companies and institutions specialised in building materials, contracting, technical and engineering solutions, according to fair and clear evaluation mechanisms that ensure equal opportunities and sustainable integrated interests.',
+      sup_cta: 'Apply as a Supplier',
 
       // Index offers preview
       offer_dev: 'Development',
@@ -268,13 +292,13 @@
       btn_inquire: 'Inquire',
 
       // Footer
-      footer_tagline: 'Your trusted partner for real estate development, investment, and property management in Jeddah.',
+      footer_tagline: 'Your trusted partner for real estate development and investment in Jeddah.',
       footer_quick: 'Quick Links',
       footer_types: 'Our Services',
       footer_areas: 'Areas We Serve',
       footer_last_proj: 'Last Projects',
       footer_serv: 'Our Services',
-      footer_copy: '© 2026 Awnalmaali for Real Estate Development & Investment. All rights reserved.',
+      footer_copy: '© 2026 Awnalmaali for Real Estate Development &amp; Investment. All rights reserved.',
       footer_privacy: 'Privacy Policy',
       footer_terms: 'Terms of Service',
 
@@ -286,36 +310,38 @@
       nav_home: 'الرئيسية',
       nav_about: 'من نحن',
       nav_projects: 'المشاريع',
-      nav_offers: 'العروض',
+      logo_sub: 'عون للتطوير والاستثمار العقاري',
+      nav_offers: 'الخدمات',
+      nav_investors: 'المستثمرون',
+      nav_suppliers: 'الموردون',
       nav_contact: 'تواصل معنا',
       logo_sub: 'للتطوير والاستثمار العقاري',
 
       // Home Hero
       hero_eyebrow: 'عون العقارية · جدة، المملكة العربية السعودية',
-      hero_title_1: 'التطوير العقاري',
-      hero_title_accent: 'والاستثمار',
+      hero_title_1: 'عون للتطوير ',
+      hero_title_accent: ' والاستثمار العقاري',
       hero_desc: 'شريكك الموثوق في التطوير العقاري والاستثمار والتسويق وإدارة الممتلكات. نبني قيمة تدوم للأجيال.',
       hero_cta_1: 'استعرض المشاريع',
       hero_cta_2: 'تواصل معنا',
       scroll_label: 'اكتشف المزيد',
 
       // Stats
-      stat_projects: 'مشروع قيد التطوير',
+      stat_projects: 'مشروع قادم',
       stat_units: 'فرصة استثمارية',
-      stat_years: 'تأسست 2026',
       stat_clients: 'شريك وموثوق',
 
       // Sections
       featured_eyebrow: 'مشاريعنا',
       featured_title: 'مشاريع مميزة',
-      featured_lead: 'اكتشف محفظتنا من مشاريع التطوير العقاري والاستثمار في جدة',
+      featured_lead: 'اكتشف مشاريعنا الواعدة، و فرصنا الاستثمارية النوعية والمميزة في مدينة جدة',
       offers_eyebrow: 'خدماتنا',
       offers_title: 'ماذا نقدم',
       offers_lead: 'حلول عقارية متكاملة مبنية على الثقة والشفافية والاحترافية',
-      about_eyebrow: 'عن عون',
-      about_title: 'التطوير والاستثمار العقاري',
-      about_p1: 'تأسست شركة عون للتطوير والاستثمار العقاري من إيمان عميق بأن القطاع العقاري لا يُدار بالأرقام وحدها، بل يُدار بالثقة وبفهم حقيقي لاحتياجات الإنسان قبل احتياجات السوق.',
-      about_p2: 'نقدم حلولاً عقارية متكاملة تشمل التطوير والتسويق والإدارة والاستثمار، مع التركيز على بناء قيمة مستدامة وليس مجرد صفقات قصيرة الأجل.',
+      about_eyebrow: 'من نحن',
+      about_title: 'هويتنا',
+      about_p1: 'عون يبقى.. ونماء يثمر. إن اختيار اسم "عون" جاء امتدادًا لهويتنا العائلية، ولكنه يحمل في جوهره معنى أعمق؛ أن نكون سندًا، ودعمًا، وشريكًا يعتمد عليه في بناء القرارات العقارية والاستثمارية. نحن نبني علاقات راسخة قائمة على الثقة وفهم احتياجات الإنسان قبل متطلبات السوق.',
+      about_p2: 'نقدم حلولاً عقارية عالية الجودة مبنية على دراسة دقيقة وتحليل عميق للسوق، مع الالتزام بالشفافية والمصداقية كمعيار ثابت.',
       contact_eyebrow: 'تواصل معنا',
       contact_title: 'نحن هنا لمساعدتك — تواصل معنا اليوم',
 
@@ -340,12 +366,10 @@
       loc_shati_short: 'الشاطئ، جدة',
 
       // Project names
-      proj_name_1: 'مشروع سكني — أ',
-      proj_name_2: 'برج استثماري — ب',
-      proj_name_3: 'إدارة محفظة عقارية — ج',
-      proj_name_4: 'مشروع تجاري — د',
-      proj_name_5: 'استثمار واجهة بحرية — هـ',
-      proj_name_6: 'إدارة مرافق — و',
+      proj_name_1: 'مشروع المحفظة',
+      proj_name_2: 'مشروع البرج',
+      proj_name_3: 'المبنى التجاري',
+      proj_name_4: 'المبنى السكني',
 
       // Project prices
       price_coming_soon: 'قريباً',
@@ -380,9 +404,13 @@
       feat_maint_incl: 'صيانة شاملة',
 
       // About page
-      about_story: 'قصتنا',
-      about_story_title: 'بنيت على الرؤية، يقودها التميز',
-      about_story_p: 'نؤمن بأن النجاح لا يُقاس بعدد الصفقات، بل بجودة العلاقات التي نبنيها والأثر الذي نتركه في عملائنا وشركائنا. اسمنا "عون" يعكس جوهرنا الحقيقي — أن نكون سنداً وشريكاً وموثوقاً في كل خطوة.',
+      about_story: 'من نحن',
+      about_story_title: 'هويتنا',
+      about_name_meaning: 'إن اختيار اسم "عون" جاء امتدادًا لهويتنا العائلية، ولكنه يحمل في جوهره معنى أعمق؛ أن نكون سندًا، ودعمًا، وشريكًا يعتمد عليه في بناء القرارات العقارية والاستثمارية. نحن نبني علاقات راسخة قائمة على الثقة وفهم احتياجات الإنسان قبل متطلبات السوق.',
+      about_vision_title: 'رؤيتنا',
+      about_vision: 'أن نكون الكيان العقاري والاستثماري الأبرز في المملكة، عبر تقديم مشاريع نوعية تواكب مستهدفات رؤية 2030، وتصنع قيمة مستدامة تورث وتلهم الأجيال.',
+      about_mission_title: 'رسالتنا',
+      about_mission: 'تقديم حلول عقارية عالية الجودة مبنية على دراسة دقيقة وتحليل عميق للسوق، مع الالتزام بالشفافية والمصداقية كمعيار ثابت.',
       about_feat_trust: 'الثقة والشفافية',
       about_feat_trust_desc: 'وضوح كامل في كل خطوة — لا رسوم مخفية، ولا مفاجآت',
       about_feat_vision: 'متوافق مع رؤية 2030',
@@ -391,8 +419,8 @@
       about_feat_partner_desc: 'بناء شبكة واسعة مع المستثمرين والمطورين والوسطاء',
       about_feat_quality: 'الاحترافية والجودة',
       about_feat_quality_desc: 'معايير أداء عالية وتنفيذ دقيق في كل خدمة',
-      about_feat_partner2: 'شراكات استراتيجية',
-      about_feat_partner2_desc: 'بناء علاقات دائمة مع المستثمرين والمطورين والوسطاء',
+      about_team_philosophy: 'في "عون"، نؤمن أن التميز تقوده الكفاءات النوعية والشغف البشري. يضم فريقنا نخبة من الخبراء، المهندسين، والمحللين الماليين الذين يتشاركون رؤية واحدة: "الالتزام بالوعود والوفاء بها قبل أي شيء".',
+      about_team_lead: 'بإشراف وتوجيه من الرئيس التنفيذي الأستاذ عبدالله أحمد عبدالله آل عون القحطاني، تعمل كافة قطاعات الشركة بنظام تكاملي صارم يعتمد الدقة، الشفافية، والاحترافية كمعايير لا مساومة فيها. نحن نقود منظومة تصنع الأثر المستدام.',
 
       // Values
       values_title: 'قيمنا',
@@ -411,11 +439,11 @@
       value_innov_desc: 'تحويل الأفكار إلى فرص استثمارية حقيقية بأساليب حديثة وحلول ذكية.',
 
       // Team
-      team_eyebrow: 'القيادة',
-      team_title: 'المؤسس والرئيس التنفيذي',
-      team_lead: 'قيادة رؤيوية تقود التميز في التطوير العقاري والاستثمار',
+      team_eyebrow: 'فريق العمل',
+      team_title: 'سواعد تصنع المستقبل',
+      team_lead: 'في عون، نؤمن أن التميز تقوده الكفاءات النوعية والشغف البشري',
       team_name: 'عبدالله أحمد عبدالله آل عون آل قحطاني',
-      team_role: 'المؤسس والرئيس التنفيذي',
+      team_role: 'المؤسس ورئيس مجلس الإدارة',
       team_bio: 'يقود عون المعالي برؤية متجذرة في الثقة والابتكار والنمو المستدام. ملتزم ببناء كيان عقاري واستثماري رائد في المملكة العربية السعودية.',
 
       // Accreditations
@@ -434,8 +462,10 @@
       contact_label_phone: 'الهاتف',
       contact_label_email: 'البريد الإلكتروني',
       contact_label_website: 'الموقع الإلكتروني',
+      contact_label_whatsapp: 'واتساب',
+      contact_whatsapp_text: 'مراسلة شركة عون المعالي للتطوير والاستثمار العقاري عبر واتساب',
       contact_addr_val: '9476 طريق المدينة، حي الأندلس\nص.ب 4127، جدة 23326\nالمملكة العربية السعودية',
-      contact_phone_val: '+966 55 810 0341\n+966 50 082 8856',
+      contact_phone_val: '0558100341\n- 0500828856',
       contact_email_val: 'Info@awnalmaali.com',
       contact_website_val: 'awnalmaali.com',
       contact_form_title: 'طلب استشارة',
@@ -476,8 +506,10 @@
       footer_serv_cons: 'الاستشارات العقارية',
 
       // Services / Offers page
+      services_main_title: 'حلول متكاملة.. من الفكرة إلى الاستثمار الواقعي',
       services_hero_sub: 'نبني على الثقة والشفافية',
       services_eyebrow: 'حلول شاملة',
+      services_intro: 'نقدم في "عون العقارية" منظومة شاملة من الخدمات المصممة لتلبية تطلعات الأفراد، الشركات، والمستثمرين بكفاءة وموثوقية عالية.',
       countdown_day: 'يوم',
       countdown_hour: 'ساعة',
       countdown_min: 'دقيقة',
@@ -485,23 +517,23 @@
       srv_badge_dev: 'تطوير',
       srv_tag_dev: 'التطوير العقاري',
       srv_title_dev: 'تطوير مشاريع متكامل',
-      srv_desc_dev: 'من دراسات الجدوى والتصميم مروراً بالبناء والتسليم، ندير دورة حياة التطوير بالكامل. كل مشروع يتوافق مع احتياجات السوق ورؤية 2030، مما يضمن الجودة والابتكار والقيمة المستدامة.',
+      srv_desc_dev: 'تحويل الأفكار والفرص إلى مشاريع ومجمعات سكنية وتجارية نوعية ترتكز على الابتكار والجودة.',
       srv_badge_inv: 'استثمار',
       srv_tag_inv: 'الاستثمار العقاري',
       srv_title_inv: 'فرص استثمارية حصرية',
-      srv_desc_inv: 'نحدد ونقيّم ونقدم فرصاً استثمارية حصرية في مواقع متميزة. تساعد خدمات إدارة المحافظ والاستشارات الاستراتيجية الأفراد والمؤسسات على تحقيق عوائد مستدامة بثقة.',
+      srv_desc_inv: 'قراءة دقيقة للفرص الحصرية، وإدارة المخاطر بذكاء لضمان عوائد مستدامة ونمو آمن لرؤوس الأموال.',
       srv_badge_mgmt: 'إدارة',
       srv_tag_mgmt: 'إدارة الممتلكات',
       srv_title_mgmt: 'عمليات عقارية شاملة',
-      srv_desc_mgmt: 'خدمات إدارة شاملة تشمل علاقات المستأجرين والصيانة والعمليات ودعم ما بعد البيع. نضمن الحفاظ على قيمة ممتلكك وتحقيق عوائد مثالية براحة بال كاملة.',
+      srv_desc_mgmt: 'الحفاظ على الأصول العقارية وتطويرها بما يضمن استدامة قيمتها الاستثمارية على المدى الطويل.',
       srv_badge_mktg: 'تسويق',
       srv_tag_mktg: 'التسويق والوساطة العقارية',
       srv_title_mktg: 'وساطة عقارية احترافية',
-      srv_desc_mktg: 'خدمات تسويق ووساطة احترافية لشراء وبيع وتأجير العقارات. ندعم الوسطاء العقاريين بأدوات تسويقية وقواعد بيانات متخصصة ومعلومات سوقية لتعزيز الوصول والنتائج.',
+      srv_desc_mktg: 'دعم منظومة البيع والشراء والتأجير بأدوات تسويقية متطورة وقواعد بيانات متخصصة تخدم العملاء والوسطاء.',
       srv_badge_cons: 'استشارات',
-      srv_tag_cons: 'الاستشارات العقارية',
+      srv_tag_cons: 'الاستشارات والمتابعة الإجرائية',
       srv_title_cons: 'استشارات خبراء ودعم قانوني',
-      srv_desc_cons: 'خدمات استشارية استراتيجية تشمل تحليل السوق ودراسات الجدوى والاستشارات الاستثمارية. نقدم دعماً قانونياً وإجرائياً كاملاً لتسهيل التملك والاستثمار للمواطنين والمقيمين والمستثمرين الأجانب.',
+      srv_desc_cons: 'تقديم مشورة مبنية على خبرة، وتسهيل عمليات التملك والاستثمار للمواطنين والمقيمين والمستثمرين الأجانب قانونياً وإجرائياً.',
       srv_badge_fin: 'تمويل',
       srv_tag_fin: 'حلول تمويلية',
       srv_title_fin: 'حلول تمويلية متكاملة',
@@ -512,6 +544,25 @@
       banner_vision: 'رؤية 2030',
       banner_vision_title: 'متوافق مع الأهداف الوطنية',
       banner_vision_desc: 'يساهم عملنا في التنمية العمرانية والنمو الاقتصادي للمملكة، دعماً للأهداف الطموحة لرؤية 2030 من خلال التطوير العقاري المستدام والاستثمار.',
+
+      // Investors page
+      inv_eyebrow: 'الشراكة الاستراتيجية',
+      inv_title: 'نبتكر الفرص، لنمو يثمر',
+      inv_vision: 'نحن في "عون" نرى الاستثمار من منظور الشراكة وتكامل المصالح؛ فالنجاح الحقيقي يُبنى بالتعاون. نقوم بتحليل عميق للسوق العقاري واتخاذ قرارات استثمارية مدروسة بهدف حماية وتنمية الأصول وتخفيف المخاطر بذكاء.',
+      inv_offer_title: 'ماذا نقدم لشركائنا المستثمرين؟',
+      inv_offer_1: 'فرص حصرية: توفير نوافذ استثمارية واعدة ونوعية في أكثر المناطق حيوية (منطقة مكة المكرمة).',
+      inv_offer_2: 'حلول تمويلية: ربط المستثمرين والمشاريع بالجهات التمويلية المناسبة بما يتوافق مع الأهداف الاستثمارية.',
+      inv_offer_3: 'شفافية تامة: تقارير دورية ووضوح كامل في كل خطوة إجرائية أو مالية، لبناء علاقة طويلة الأمد عنوانها الثقة المتبادلة.',
+
+      // Suppliers page
+      sup_hero_eyebrow: 'شركاء في الجودة',
+      sup_hero_title: 'بوابة الموردين',
+      sup_hero_sub: 'بناء واستدامة — انضم إلى شبكتنا',
+      sup_eyebrow: 'شركاء في الجودة',
+      sup_title: 'بناء واستدامة — بوابة الموردين',
+      sup_intro: 'لأننا نلتزم بتقديم أعلى مستويات الكفاءة والموثوقية، فإننا نعتبر شبكة الموردين والمقاولين لدينا جزءاً لا يتجزأ من هويتنا وجدارتنا العقارية. نحن نبحث دائماً عن الكيانات التي تشاركنا قيم "الجودة، والالتزام، والاستدامة" لتحويل المخططات إلى معالم حية على أرض الواقع.',
+      sup_criteria: 'ترحب بوابة الموردين في "عون المعالي" بطلبات التأهيل من الشركات والمؤسسات المتخصصة في مواد البناء، المقاولات، الحلول التقنية، والهندسية، وفق آليات تقييم عادلة وواضحة تضمن تكافؤ الفرص وتكامل المصالح المستدامة.',
+      sup_cta: 'تقديم طلب تأهيل',
 
       // Projects CTA
       proj_cta_eyebrow: 'تبحث عن فرصة محددة؟',
@@ -557,7 +608,7 @@
 
   // ─── Language State ─────────────────────────────────────────────────────────
 
-  let currentLang = localStorage.getItem('alnoor_lang') || 'en';
+  let currentLang = localStorage.getItem('alnoor_lang') || 'ar';
 
   function getLangRoot() { return document.documentElement; }
 
@@ -594,11 +645,11 @@
   // ─── Navigation ─────────────────────────────────────────────────────────────
 
   function initNav() {
-    const header   = document.getElementById('header');
-    const toggle   = document.getElementById('navToggle');
-    const menu     = document.getElementById('navMenu');
+    const header = document.getElementById('header');
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
     const closeBtn = document.getElementById('navClose');
-    const overlay  = document.getElementById('navOverlay');
+    const overlay = document.getElementById('navOverlay');
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (!header) return;
@@ -611,7 +662,7 @@
     onScroll();
 
     // Mobile menu
-    const openMenu  = () => { menu?.classList.add('open'); document.body.style.overflow = 'hidden'; };
+    const openMenu = () => { menu?.classList.add('open'); document.body.style.overflow = 'hidden'; };
     const closeMenu = () => { menu?.classList.remove('open'); document.body.style.overflow = ''; };
 
     toggle?.addEventListener('click', openMenu);
@@ -628,7 +679,7 @@
       const href = link.getAttribute('href') || '';
       if (
         (currentPage === '' || currentPage === 'index.html') && href.includes('index') ||
-        href.includes(currentPage.replace('.html',''))
+        href.includes(currentPage.replace('.html', ''))
       ) {
         link.classList.add('active');
       }
@@ -710,7 +761,7 @@
   // ─── Gallery Filter ──────────────────────────────────────────────────────────
 
   function initFilter() {
-    const tabs  = document.querySelectorAll('.filter-tab');
+    const tabs = document.querySelectorAll('.filter-tab');
     const cards = document.querySelectorAll('.prop-card[data-cat]');
     if (!tabs.length) return;
 
@@ -745,10 +796,10 @@
     target.setDate(target.getDate() + 7);
     target.setHours(23, 59, 59, 0);
 
-    const daysEl  = document.getElementById('cd-days');
+    const daysEl = document.getElementById('cd-days');
     const hoursEl = document.getElementById('cd-hours');
-    const minsEl  = document.getElementById('cd-mins');
-    const secsEl  = document.getElementById('cd-secs');
+    const minsEl = document.getElementById('cd-mins');
+    const secsEl = document.getElementById('cd-secs');
 
     function pad(n) { return String(n).padStart(2, '0'); }
 
@@ -760,13 +811,13 @@
       }
       const d = Math.floor(diff / 86400000);
       const h = Math.floor((diff % 86400000) / 3600000);
-      const m = Math.floor((diff % 3600000)  / 60000);
-      const s = Math.floor((diff % 60000)    / 1000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
 
-      if (daysEl)  daysEl.textContent  = pad(d);
+      if (daysEl) daysEl.textContent = pad(d);
       if (hoursEl) hoursEl.textContent = pad(h);
-      if (minsEl)  minsEl.textContent  = pad(m);
-      if (secsEl)  secsEl.textContent  = pad(s);
+      if (minsEl) minsEl.textContent = pad(m);
+      if (secsEl) secsEl.textContent = pad(s);
     }
 
     update();
@@ -852,11 +903,11 @@
   function initCardTilt() {
     document.querySelectorAll('.prop-card').forEach(card => {
       card.addEventListener('mousemove', e => {
-        const rect  = card.getBoundingClientRect();
-        const cx    = rect.left + rect.width / 2;
-        const cy    = rect.top  + rect.height / 2;
-        const rotX  = ((e.clientY - cy) / (rect.height / 2)) * -5;
-        const rotY  = ((e.clientX - cx) / (rect.width  / 2)) *  5;
+        const rect = card.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const rotX = ((e.clientY - cy) / (rect.height / 2)) * -5;
+        const rotY = ((e.clientX - cx) / (rect.width / 2)) * 5;
         card.style.transform = `translateY(-12px) scale(1.01) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
       });
 
@@ -869,23 +920,19 @@
   // ─── Page Transition Fade ────────────────────────────────────────────────────
 
   function initPageFade() {
+    if (document.visibilityState === 'hidden') return;
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.35s ease';
     requestAnimationFrame(() => {
       requestAnimationFrame(() => { document.body.style.opacity = '1'; });
     });
-
-    document.querySelectorAll('a[href]').forEach(a => {
-      const href = a.getAttribute('href');
-      if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel')) return;
-
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.body.style.opacity = '0';
-        setTimeout(() => { window.location.href = href; }, 320);
-      });
-    });
   }
+
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) {
+      document.body.style.opacity = '1';
+    }
+  });
 
   // ─── Init ────────────────────────────────────────────────────────────────────
 

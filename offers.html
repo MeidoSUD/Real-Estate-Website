@@ -5,6 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services | Awnalmaali — Real Estate Development & Investment Jeddah</title>
   <meta name="description" content="Explore Awnalmaali's comprehensive real estate services in Jeddah: development, investment, management, marketing, and consulting.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://awnalmaali.com/offers.html">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="x-default" href="https://awnalmaali.com/offers.html">
+  <link rel="alternate" hreflang="en" href="https://awnalmaali.com/offers.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Services | Awnalmaali — Real Estate Development &amp; Investment">
+  <meta property="og:description" content="Explore Awnalmaali's comprehensive real estate services: development, investment, management, marketing, and consulting in Jeddah.">
+  <meta property="og:image" content="https://awnalmaali.com/assets/sea.jpg">
+  <meta property="og:url" content="https://awnalmaali.com/offers.html">
+  <meta property="og:site_name" content="Awnalmaali for Real Estate Development &amp; Investment">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Services | Awnalmaali — Real Estate Development &amp; Investment">
+  <meta name="twitter:description" content="Awnalmaali's real estate services: development, investment, management, marketing, and consulting.">
+  <meta name="twitter:image" content="https://awnalmaali.com/assets/sea.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Awnalmaali for Real Estate Development &amp; Investment",
+    "alternateName": "عون للتطوير والاستثمار العقاري",
+    "url": "https://awnalmaali.com",
+    "logo": "https://awnalmaali.com/assets/logo.png",
+    "telephone": "+966-55-810-0341",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9476 Madinah Road, Al-Andalus District",
+      "addressLocality": "Jeddah",
+      "addressRegion": "Makkah Province",
+      "postalCode": "23326",
+      "addressCountry": "SA"
+    },
+    "sameAs": [
+      "https://awnalmaali.com"
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7D12HQQBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q7D12HQQBN');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5CZ7ZTW9');</script>
+  <!-- End Google Tag Manager -->
+
   <link rel="stylesheet" href="./style.css">
   <style>
     .offers-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s6); }
@@ -12,6 +80,10 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CZ7ZTW9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
   <header class="header" id="header">
@@ -29,7 +101,9 @@
             <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
             <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
             <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
-            <li><a href="offers.html" class="nav-link active" data-i18n="nav_offers">Offers</a></li>
+            <li><a href="offers.html" class="nav-link active" data-i18n="nav_offers">Services</a></li>
+            <li><a href="investors.html" class="nav-link" data-i18n="nav_investors">Investors</a></li>
+            <li><a href="suppliers.html" class="nav-link" data-i18n="nav_suppliers">Suppliers</a></li>
             <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
           </ul>
         </div>
@@ -51,37 +125,13 @@
   </header>
 
   <main>
-    <!-- ═══ OFFERS HERO + COUNTDOWN ═══════════════════════════════════════ -->
-    <section class="offers-hero">
-      <div class="offers-hero-bg"></div>
-      <div class="offers-hero-overlay"></div>
-
-      <div class="offers-hero-content">
-        <span class="offers-hero-eyebrow" data-i18n="services_eyebrow">Comprehensive Solutions</span>
-        <h1 class="offers-hero-title" data-i18n="offers_title">Our Services</h1>
-        <p class="offers-hero-days" data-i18n="services_hero_sub">Built on Trust &amp; Transparency</p>
-
-        <!-- Countdown Timer -->
-        <div class="countdown-wrap" id="countdown">
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-days">00</span>
-            <div class="countdown-label" data-i18n="countdown_day">Day</div>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-hours">00</span>
-            <div class="countdown-label" data-i18n="countdown_hour">Hour</div>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-mins">00</span>
-            <div class="countdown-label" data-i18n="countdown_min">Min</div>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-secs">00</span>
-            <div class="countdown-label" data-i18n="countdown_sec">Sec</div>
-          </div>
-        </div>
-
-        <a href="contact.html" class="btn btn-gold" data-i18n="btn_book_now">Get in Touch</a>
+    <!-- ═══ OFFERS HERO ═════════════════════════════════════════════════ -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image:url('assets/sea.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="page-hero-eyebrow" data-i18n="services_eyebrow">Comprehensive Solutions</p>
+        <h1 class="page-hero-title" data-i18n="services_main_title">Integrated Solutions — From Idea to Real Investment</h1>
       </div>
     </section>
 
@@ -90,9 +140,9 @@
       <div class="container">
         <div class="section-head center fade-up">
           <p class="eyebrow" data-i18n="services_eyebrow">Comprehensive Solutions</p>
-          <h2 class="section-title" data-i18n="offers_title">Our Services</h2>
+          <h2 class="section-title" data-i18n="services_main_title">Integrated Solutions — From Idea to Real Investment</h2>
           <div class="title-bar"></div>
-          <p class="section-lead" style="margin-top:1rem;" data-i18n="offers_lead">Integrated real estate solutions built on trust, transparency, and professionalism</p>
+          <p class="section-lead" style="margin-top:1rem;" data-i18n="services_intro">We offer a comprehensive system of services designed to meet the aspirations of individuals, companies, and investors with high efficiency and reliability.</p>
         </div>
 
         <div class="offers-list">
@@ -202,6 +252,8 @@
             <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
             <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
             <li><a href="offers.html" data-i18n="nav_offers">Services</a></li>
+            <li><a href="investors.html" data-i18n="nav_investors">Investors</a></li>
+            <li><a href="suppliers.html" data-i18n="nav_suppliers">Suppliers</a></li>
             <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
           </ul>
         </div>
