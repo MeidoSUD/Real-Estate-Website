@@ -873,6 +873,13 @@ button { cursor: pointer; border: none; background: none; }
   margin-block-start: var(--s1);
 }
 
+.prop-desc {
+  color: var(--gray-700);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin-block: 0 var(--s4);
+}
+
 /* Card features row */
 .prop-features {
   display: flex;

@@ -69,10 +69,10 @@
       loc_shati_short: 'Al-Shati, Jeddah',
 
       // Project names
-      proj_name_1: 'Wallet Project',
-      proj_name_2: 'Tower Project',
-      proj_name_3: 'Trade Building',
-      proj_name_4: 'Resident Building',
+      proj_name_1: 'Investment Wallet',
+      proj_name_2: 'Administrative Tower',
+      proj_name_3: 'Commercial Building',
+      proj_name_4: 'Residential Building',
 
       // Project prices
       price_coming_soon: 'Coming Soon',
@@ -105,6 +105,10 @@
       feat_full_ops: 'Full Operations',
       feat_tenant_mgmt: 'Tenant Management',
       feat_maint_incl: 'Maintenance Included',
+      proj_desc_1: 'A managed investment portfolio designed to organize assets, track opportunities, and support confident real estate decisions.',
+      proj_desc_2: 'A modern administrative tower planned for efficient offices, flexible workspaces, and strong long-term value.',
+      proj_desc_3: 'A commercial destination created for retail activity, business visibility, and sustainable investment growth.',
+      proj_desc_4: 'A residential development focused on comfort, practical layouts, and quality living in a prime Jeddah location.',
 
       // About page
       about_story: 'Our Identity',
@@ -321,7 +325,7 @@
       hero_eyebrow: 'عون العقارية · جدة، المملكة العربية السعودية',
       hero_title_1: 'عون للتطوير ',
       hero_title_accent: ' والاستثمار العقاري',
-      hero_desc: 'شريكك الموثوق في التطوير العقاري والاستثمار والتسويق وإدارة الممتلكات. نبني قيمة تدوم للأجيال.',
+      hero_desc: 'شريكك الموثوق في المجال العقاري ، قيمة تدوم للآجيال',
       hero_cta_1: 'استعرض المشاريع',
       hero_cta_2: 'تواصل معنا',
       scroll_label: 'اكتشف المزيد',
@@ -329,7 +333,7 @@
       // Stats
       stat_projects: 'مشروع قادم',
       stat_units: 'فرصة استثمارية',
-      stat_clients: 'شريك وموثوق',
+      stat_clients: 'شريك و مستثمر',
 
       // Sections
       featured_eyebrow: 'مشاريعنا',
@@ -366,10 +370,10 @@
       loc_shati_short: 'الشاطئ، جدة',
 
       // Project names
-      proj_name_1: 'مشروع المحفظة',
-      proj_name_2: 'مشروع البرج',
-      proj_name_3: 'المبنى التجاري',
-      proj_name_4: 'المبنى السكني',
+      proj_name_1: 'المحفظة الاستثمارية',
+      proj_name_2: 'برج إداري',
+      proj_name_3: 'مبنى تجاري',
+      proj_name_4: 'مبنى سكني',
 
       // Project prices
       price_coming_soon: 'قريباً',
@@ -402,6 +406,10 @@
       feat_full_ops: 'تشغيل كامل',
       feat_tenant_mgmt: 'إدارة المستأجرين',
       feat_maint_incl: 'صيانة شاملة',
+      proj_desc_1: 'محفظة استثمارية مدارة لتنظيم الأصول، متابعة الفرص، ودعم القرارات العقارية بثقة ووضوح.',
+      proj_desc_2: 'برج إداري حديث مصمم لمساحات عمل مرنة ومكاتب فعالة وقيمة استثمارية مستدامة.',
+      proj_desc_3: 'وجهة تجارية تخدم النشاط التجاري، تعزز الحضور، وتدعم نمو الاستثمار على المدى الطويل.',
+      proj_desc_4: 'مشروع سكني يركز على الراحة، التخطيط العملي، وجودة الحياة في موقع مميز بمدينة جدة.',
 
       // About page
       about_story: 'من نحن',
@@ -773,7 +781,7 @@
         const cat = tab.dataset.cat;
 
         cards.forEach((card, i) => {
-          const show = cat === 'all' || card.dataset.cat === cat;
+          const show = cat === 'all' || cat === 'investment' || card.dataset.cat === cat;
           card.style.display = show ? 'block' : 'none';
           if (show) {
             card.style.animation = `none`;
