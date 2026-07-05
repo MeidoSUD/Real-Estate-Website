@@ -1372,6 +1372,13 @@ button { cursor: pointer; border: none; background: none; }
 
 .social-icon svg { width: 18px; height: 18px; }
 
+.social-brand-icon span {
+  font-family: var(--font-display-en);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
 /* Contact Form */
 .contact-form-card {
   background: var(--white);
