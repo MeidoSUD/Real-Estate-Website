@@ -12,10 +12,10 @@ export default defineConfig({
         investors: resolve(__dirname, 'investors.html'),
         suppliers: resolve(__dirname, 'suppliers.html'),
         contact: resolve(__dirname, 'contact.html'),
-        server: {
-          allowedHosts: ['localhost', '127.0.0.1']
-        }
       }
     }
+  },
+  server: {
+    allowedHosts: ['localhost', '127.0.0.1']
   }
 })
