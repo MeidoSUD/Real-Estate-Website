@@ -1348,6 +1348,8 @@ button { cursor: pointer; border: none; background: none; }
 .contact-det-icon svg { width: 20px; height: 20px; }
 .contact-det-label { font-size: 0.75rem; color: rgba(255,255,255,.6); margin-block-end: var(--s1); }
 .contact-det-value { color: var(--white); font-weight: 500; font-size: 0.9rem; }
+.contact-map-link { display: inline-block; margin-block-start: var(--s2); color: var(--gold-light); font-size: 0.8rem; text-decoration: underline; text-underline-offset: 3px; }
+.contact-map-link:hover { color: var(--gold); }
 
 .social-row {
   display: flex;
