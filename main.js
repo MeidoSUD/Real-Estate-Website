@@ -18,15 +18,18 @@
       nav_investors: 'Investors',
       nav_suppliers: 'Suppliers',
       nav_contact: 'Contact Us',
-      logo_sub: 'Awn Real Estate Development and Investment',
+      logo_sub: 'Awn Almaali for Real Estate Development and Investment',
+      logo_name_en: 'Awn Almaali',
+      logo_name_ar: 'شركة عون المعالي للتطوير والاستثمار العقاري',
 
       // Home Hero
-      hero_eyebrow: 'Awnalmaali · Jeddah, Saudi Arabia',
+      hero_eyebrow: 'Awn Almaali for Real Estate Development and Investment · Jeddah, Saudi Arabia',
       hero_title_1: 'Awn Real Estate Development',
       hero_title_accent: 'and Investment',
       hero_desc: 'Your trusted partner in real estate development, investment, marketing, and property management. Building value that lasts for generations.',
       hero_cta_1: 'Explore Projects',
       hero_cta_2: 'Contact Us',
+      btn_download_profile: 'Download Company Profile',
       scroll_label: 'Scroll to discover',
 
       // Stats
@@ -168,7 +171,7 @@
       contact_label_email: 'Email',
       contact_label_website: 'Website',
       contact_label_whatsapp: 'WhatsApp',
-      contact_whatsapp_text: 'Message Awn Al-Maali for Real Estate Development and Investment via WhatsApp',
+      contact_whatsapp_text: 'Message Awn Almaali for Real Estate Development and Investment via WhatsApp',
       contact_addr_val: '9476 Madinah Road, Al-Andalus\nP.O. Box 4127, Jeddah 23326\nKingdom of Saudi Arabia',
       contact_phone_val: '0558100341\n0500828856',
       contact_email_val: 'Info@awnalmaali.com',
@@ -296,13 +299,13 @@
       btn_inquire: 'Inquire',
 
       // Footer
-      footer_tagline: 'Your trusted partner for real estate development and investment in Jeddah.',
+      footer_tagline: 'Your trusted partner for real estate development and investment in Jeddah from Awn Almaali.',
       footer_quick: 'Quick Links',
       footer_types: 'Our Services',
       footer_areas: 'Areas We Serve',
       footer_last_proj: 'Last Projects',
       footer_serv: 'Our Services',
-      footer_copy: '© 2026 Awnalmaali for Real Estate Development &amp; Investment. All rights reserved.',
+      footer_copy: '© 2026 Awn Almaali for Real Estate Development and Investment. All rights reserved.',
       footer_privacy: 'Privacy Policy',
       footer_terms: 'Terms of Service',
 
@@ -314,20 +317,22 @@
       nav_home: 'الرئيسية',
       nav_about: 'من نحن',
       nav_projects: 'المشاريع',
-      logo_sub: 'عون المعالي للتطوير والاستثمار العقاري شركة',
+      logo_sub: 'شركة عون المعالي للتطوير والاستثمار العقاري',
+      logo_name_en: 'Awn Almaali',
+      logo_name_ar: 'شركة عون المعالي للتطوير والاستثمار العقاري',
       nav_offers: 'الخدمات',
       nav_investors: 'المستثمرون',
       nav_suppliers: 'الموردون',
       nav_contact: 'تواصل معنا',
-      logo_sub: 'عون المعالي للتطوير والاستثمار العقاري شركة',
 
       // Home Hero
-      hero_eyebrow: 'شركة عون المعالي العقارية · جدة، المملكة العربية السعودية',
-      hero_title_1: ' شركة عون المعالي للتطوير ',
-      hero_title_accent: ' والاستثمار العقاري',
+      hero_eyebrow: 'شركة عون المعالي للتطوير والاستثمار العقاري · جدة، المملكة العربية السعودية',
+      hero_title_1: 'عون للتطوير العقاري',
+      hero_title_accent: 'والاستثمار',
       hero_desc: 'شريكك الموثوق في المجال العقاري ، قيمة تدوم للآجيال',
       hero_cta_1: 'استعرض المشاريع',
       hero_cta_2: 'تواصل معنا',
+      btn_download_profile: 'تحميل ملف الشركة',
       scroll_label: 'اكتشف المزيد',
 
       // Stats
@@ -669,13 +674,32 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Mobile menu
-    const openMenu = () => { menu?.classList.add('open'); document.body.style.overflow = 'hidden'; };
-    const closeMenu = () => { menu?.classList.remove('open'); document.body.style.overflow = ''; };
+    // Mobile menu — create overlay if missing
+    let navOverlay = overlay;
+    if (!navOverlay) {
+      navOverlay = document.createElement('div');
+      navOverlay.id = 'navOverlay';
+      navOverlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:998;opacity:0;pointer-events:none;transition:opacity .3s ease';
+      document.body.appendChild(navOverlay);
+    }
+    const overlayEl = navOverlay;
+
+    const openMenu = () => {
+      menu?.classList.add('open');
+      overlayEl.style.opacity = '1';
+      overlayEl.style.pointerEvents = 'auto';
+      document.body.style.overflow = 'hidden';
+    };
+    const closeMenu = () => {
+      menu?.classList.remove('open');
+      overlayEl.style.opacity = '0';
+      overlayEl.style.pointerEvents = 'none';
+      document.body.style.overflow = '';
+    };
 
     toggle?.addEventListener('click', openMenu);
     closeBtn?.addEventListener('click', closeMenu);
-    overlay?.addEventListener('click', closeMenu);
+    overlayEl.addEventListener('click', closeMenu);
 
     navLinks.forEach(link => {
       link.addEventListener('click', closeMenu);
