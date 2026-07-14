@@ -8,7 +8,8 @@
 
   // ─── Language State ─────────────────────────────────────────────────────────
 
-  let currentLang = localStorage.getItem('alnoor_lang') || 'en';
+  const storedLang = localStorage.getItem('alnoor_lang');
+  let currentLang = storedLang === 'ar' || storedLang === 'en' ? storedLang : 'ar';
   let arTranslations = null;
 
   function getLangRoot() { return document.documentElement; }

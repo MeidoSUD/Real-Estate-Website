@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import { copyFileSync, existsSync, mkdirSync } from 'fs'
 
 export default defineConfig({
   build: {
@@ -15,6 +16,21 @@ export default defineConfig({
       }
     }
   },
+  plugins: [
+    {
+      name: 'copy-profile-pdf',
+      closeBundle() {
+        const src = resolve(__dirname, 'assets/profile.pdf')
+        const destDir = resolve(__dirname, 'dist/assets')
+        const dest = resolve(destDir, 'profile.pdf')
+
+        if (!existsSync(src)) return
+
+        mkdirSync(destDir, { recursive: true })
+        copyFileSync(src, dest)
+      }
+    }
+  ],
   server: {
     allowedHosts: ['localhost', '127.0.0.1']
   }
