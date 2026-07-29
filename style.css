@@ -1337,6 +1337,7 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--gold);
   flex-shrink: 0;
   transition: all var(--ease-base);
+  text-decoration: none;
 }
 
 .contact-detail:hover .contact-det-icon {
